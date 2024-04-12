@@ -13,9 +13,9 @@
           rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="min-height: 100vh">
 <!--NAVBAR-->
-<nav id="navId" class="navbar navbar-expand-lg sticky-top">
+<nav id="navId" class="navbar navbar-expand-lg fixed-top z-1">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="images/sunny.png" alt="Logo" width="70" height="70"
@@ -37,6 +37,14 @@
                 </li>
             </ul>
         </div>
+    </div>
+</nav>
+<!--STICKY TOP FIX-->
+<nav id="navId" class="navbar navbar-expand-lg sticky-top invisible">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/sunny.png" alt="Logo" width="70" height="70"
+                 class="rounded-circle d-inline-block me-3 ms-2">artist4esim</a>
     </div>
 </nav>
 <!--BANNER-->
@@ -105,401 +113,418 @@
             <strong><em>cannot</em></strong>
             choose a specific artist to do your request.</p>
         <!--GRID-->
-        <div class="row row-cols-2 row-cols-md-3 g-0">
-            <!--COPY AND PASTE THIS AS NEEDED-->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/frog.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Frog</h5>
-                        <a href="https://twitter.com/shrinpuwu"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @shrinpuwu</a>
+        <div class="container text-center">
+            <div class="row row-cols-xs-2 row-cols-md-3 g-0">
+                <!--COPY AND PASTE THIS AS NEEDED-->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/frog.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Frog</h5>
+                            <a href="https://twitter.com/shrinpuwu"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @shrinpuwu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/may.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">May</h5>
+                            <a href="https://twitter.com/maynope00"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @maynope00</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/leaf.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Leaf</h5>
+                            <a href="https://twitter.com/phreinne"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @phreinne</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/may.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">May</h5>
-                        <a href="https://twitter.com/maynope00"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @maynope00</a>
+            <div class="row row-cols-xs-2 row-cols-md-3 g-0">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/quggy.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Quynh</h5>
+                            <a href="https://twitter.com/naiivu_u"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @naiivu_u</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/rinn.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Rinn</h5>
+                            <a href="https://twitter.com/oolongteay"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @oolongteay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/claire.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Claire</h5>
+                            <a href="https://twitter.com/claireiosity"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @claireiosity</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/leaf.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Leaf</h5>
-                        <a href="https://twitter.com/phreinne"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @phreinne</a>
+            <div class="row row-cols-xs-2 row-cols-md-3 g-0">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/gravity.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Gravity</h5>
+                            <a href="https://twitter.com/gravitydusty"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @gravitydusty</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/anna.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Anna</h5>
+                            <a href="https://twitter.com/anta_baka00"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @anta_baka00</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/nori.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nori</h5>
+                            <a href="https://twitter.com/lovnir"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @lovnir</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/quggy.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Quynh</h5>
-                        <a href="https://twitter.com/naiivu_u"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @naiivu_u</a>
+            <div class="row row-cols-xs-2 row-cols-md-3 g-0">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/tako.PNG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tako</h5>
+                            <a href="https://twitter.com/takoppuku"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @takoppuku</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/chai.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chai</h5>
+                            <a href="https://twitter.com/gingermilks"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @gingermilks</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/ally.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ally</h5>
+                            <a href="https://twitter.com/cw9sq"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @cw9sq</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/rinn.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Rinn</h5>
-                        <a href="https://twitter.com/oolongteay"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @oolongteay</a>
+            <div class="row row-cols-xs-2 row-cols-md-3 g-0">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/moumo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Moumo</h5>
+                            <a href="https://twitter.com/stankyluvr"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @stankyluvr</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/ny.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ny</h5>
+                            <a href="https://twitter.com/twentyseightt"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @twentyseightt</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/lune.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lune</h5>
+                            <a href="https://twitter.com/7llOine"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @7llOine</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/claire.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Claire</h5>
-                        <a href="https://twitter.com/claireiosity"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @claireiosity</a>
+            <div class="row row-cols-xs-2 row-cols-md-3 g-0">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/ria.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ria</h5>
+                            <a href="https://twitter.com/_geummi"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @_geummi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/lynnie.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lynnie</h5>
+                            <a href="https://twitter.com/k_luv20_06"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @k_luv20_06</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/ocha.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ocha</h5>
+                            <a href="https://twitter.com/choiza04"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @choiza04</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/gravity.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Gravity</h5>
-                        <a href="https://twitter.com/gravitydusty"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @gravitydusty</a>
+            <div class="row row-cols-xs-2 row-cols-md-3 g-0">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/maru.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Maru</h5>
+                            <a href="https://twitter.com/cryingkae"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @cryingkae</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/anna.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Anna</h5>
-                        <a href="https://twitter.com/anta_baka00"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @anta_baka00</a>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/yinnie.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Yinnie</h5>
+                            <a href="https://twitter.com/oyinniex"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @oyinniex</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/nori.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Nori</h5>
-                        <a href="https://twitter.com/lovnir"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @lovnir</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/tako.PNG" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Tako</h5>
-                        <a href="https://twitter.com/takoppuku"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @takoppuku</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/chai.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Chai</h5>
-                        <a href="https://twitter.com/gingermilks"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @gingermilks</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/ally.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Ally</h5>
-                        <a href="https://twitter.com/cw9sq"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @cw9sq</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/moumo.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Moumo</h5>
-                        <a href="https://twitter.com/stankyluvr"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @stankyluvr</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/ny.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Ny</h5>
-                        <a href="https://twitter.com/twentyseightt"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @twentyseightt</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/lune.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lune</h5>
-                        <a href="https://twitter.com/7llOine"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @7llOine</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/ria.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Ria</h5>
-                        <a href="https://twitter.com/_geummi"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @_geummi</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/lynnie.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lynnie</h5>
-                        <a href="https://twitter.com/k_luv20_06"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @k_luv20_06</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/ocha.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Ocha</h5>
-                        <a href="https://twitter.com/choiza04"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @choiza04</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/maru.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Maru</h5>
-                        <a href="https://twitter.com/cryingkae"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @cryingkae</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/yinnie.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Yinnie</h5>
-                        <a href="https://twitter.com/oyinniex"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @oyinniex</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/candice.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Candice</h5>
-                        <a href="https://twitter.com/qarameiio"
-                           class="card-link text-decoration-none icon-link icon-link-hover"
-                           style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                            </svg>
-                            @qarameiio</a>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/candice.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Candice</h5>
+                            <a href="https://twitter.com/qarameiio"
+                               class="card-link text-decoration-none icon-link icon-link-hover"
+                               style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                @qarameiio</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--FAQ-->
-        <div id="faq" class="mt-4">
-            <h4>FAQ</h4>
-            <div class="accordion mt-4" id="accord">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#Q1" aria-expanded="true"
-                                aria-controls="Q1">I have a problem with my eSIM!
-                        </button>
-                    </h2>
-                    <div id="Q1" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                            <p>As advised by <a href="https://gazaesims.com/" target="_blank"
-                                                class="text-decoration-none">gazaesims.com</a>,</p>
-                            <ul>
-                                <li>If eSIM <strong>has not been activated for days/weeks</strong>, reforward the email
+    </div>
+    <!--FAQ-->
+    <div id="faq" class="mt-4">
+        <h4>FAQ</h4>
+        <div class="accordion mt-4" id="accord">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#Q1" aria-expanded="true"
+                            aria-controls="Q1">I have a problem with my eSIM!
+                    </button>
+                </h2>
+                <div id="Q1" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <p>As advised by <a href="https://gazaesims.com/" target="_blank"
+                                            class="text-decoration-none">gazaesims.com</a>,</p>
+                        <ul>
+                            <li>If eSIM <strong>has not been activated for days/weeks</strong>, reforward the email
                                 to
-                                gazaesims@gmail.com with the expiration date.</li>
+                                gazaesims@gmail.com with the expiration date.
+                            </li>
                             <li>
                                 If eSIM is <strong>about to expire or has expired</strong>, contact the company's
                                 customer service for
-                                renewal or credit to buy a new one.</li>
+                                renewal or credit to buy a new one.
+                            </li>
                             <li>
                                 If eSIM is <strong>accidentally activated</strong>, contact customer service to have
                                 it
-                                be reset.</li>
-                            </ul>
-                        </div>
+                                be reset.
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#Q2" aria-expanded="false"
-                                aria-controls="Q2">Can I request [_]?
-                        </button>
-                    </h2>
-                    <div id="Q2" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <p>If your intended request is not listed in our criterias, feel free to DM us to check
-                                with
-                                our artists :) You can submit a form regardless, but please take note that we may
-                                email
-                                you to ask for another request if your initial one is not feasible.</p>
-                        </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#Q2" aria-expanded="false"
+                            aria-controls="Q2">Can I request [_]?
+                    </button>
+                </h2>
+                <div id="Q2" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p>If your intended request is not listed in our criterias, feel free to DM us to check
+                            with
+                            our artists :) You can submit a form regardless, but please take note that we may
+                            email
+                            you to ask for another request if your initial one is not feasible.</p>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#Q3" aria-expanded="false"
-                                aria-controls="Q3">Can I donate eSIM for another carrier instead of the ones
-                            recommended?
-                        </button>
-                    </h2>
-                    <div id="Q3" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <p>Any eSIM donation accepted by #connectinggaza is eligible for a gift from us; please
-                                check with the initiative instead whether your carrier is accepted.</p>
-                        </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#Q3" aria-expanded="false"
+                            aria-controls="Q3">Can I donate eSIM for another carrier instead of the ones
+                        recommended?
+                    </button>
+                </h2>
+                <div id="Q3" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p>Any eSIM donation accepted by #connectinggaza is eligible for a gift from us; please
+                            check with the initiative instead whether your carrier is accepted.</p>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#Q4" aria-expanded="false"
-                                aria-controls="Q4">How do I know my request went through?
-                        </button>
-                    </h2>
-                    <div id="Q4" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <p>Please rest assured that as long as you receive a form response email, your gift will
-                                be
-                                done within 60 days 🙂(should there be no follow-up inquiries about your request)!
-                                </p>
-                        </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#Q4" aria-expanded="false"
+                            aria-controls="Q4">How do I know my request went through?
+                    </button>
+                </h2>
+                <div id="Q4" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p>Please rest assured that as long as you receive a form response email, your gift will
+                            be
+                            done within 60 days 🙂(should there be no follow-up inquiries about your request)!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -514,12 +539,6 @@
         @_geummi
     </footer>
 </div>
-<!--MY TO-DO LIST
-<ul>
-    <li>terms and conditions</li>
-    <li>links</li>
-</ul>
--->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous">
